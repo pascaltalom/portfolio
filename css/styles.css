@@ -418,6 +418,61 @@ legend {
   font-size: calc(1.275rem + 0.3vw);
   line-height: inherit;
 }
+
+/*Extra code Projects*/
+.project-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  height: 100vh;
+}
+.project-item {
+  margin-bottom: 30px;
+}
+.project-item a {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+.project-item a img {
+  margin-bottom: 10px;
+  float: left;
+  border: 10px solid transparent;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.project-item a h3 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.project-item a p {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 0;
+}
+.project-item a:hover, .project-item a:active, .project-item a:focus {
+  text-decoration: none;
+}
+.project-item a:hover img, .project-item a:active img, .project-item a:focus img {
+  border: 10px solid #000;
+}
+.project-item a h3{
+ font-size: 18px;
+ color: #000;
+ margin-bottom: 5px;
+ font-family: "Montserrat", Arial, sans-serif;
+ font-weight: 700;
+ margin: 0 0 15px 0;
+}
+.img-responsive{
+ display: block;
+ max-width: 100%;
+ height: auto;
+}
+
+/**/
 @media (min-width: 1200px) {
   legend {
     font-size: 1.5rem;
